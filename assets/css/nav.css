@@ -1,0 +1,476 @@
+/* 导航条样式*/
+body,html{
+    background:#F2F2F2;
+    font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+    -webkit-font-smoothing: antialiased;
+}
+i,em{
+    font-style:normal;
+}
+ul,ol,li{
+    list-style:none;
+}
+.header{
+    width:100%;
+    background:#F5F5F5;
+    height:35px;
+}
+.header .wrap{
+    width:1190px;
+    height:35px;
+    margin:0 auto;
+    background:#F5F5F5;
+}
+.wrap .header-left{
+    float: left;
+    width:400px;
+    height:35px;
+    white-space:nowrap;
+}
+.header-left ul li{
+    height:36px;
+    float: left;
+    line-height:36px;
+}
+.header-left ul li:nth-child(3) a:hover{
+    color:#FF6600;
+}
+.header-left ul li a{
+    color:#666666;
+    display: inline-block;
+}
+.header-left ul li a .shou{
+    font-size:16px;
+    margin-right: 3px;
+}
+.xia:before{
+    font-size:10px;
+    display: inline-block;
+    transition:0.3s;
+}
+/* 下箭头 旋转 */
+.site:hover .xia:before,.service:hover .xia:before,.merchant:hover .xia:before{
+    display: inline-block;
+    transform: rotate(-180deg);
+}
+ /* 网站导航  ,  商家入驻  ,  客户服务 的 li*/
+.header-left ul li.site,.header-left ul li.merchant,.header-left li.service,.header-left ul li.address{
+    position:relative;
+    top:0;
+    width:80px;
+    height:36px;
+    text-align:center;
+    z-index:2;
+    float: left;
+}
+/* hover 网站导航  商家入驻 客户服务的 li 改变里面的 a*/
+li.site:hover .site-a,li.merchant:hover .merchant-a,li.service:hover .service-a{
+    width:80px;
+    height:36px;
+    line-height:34px;
+    z-index:3;
+    background:#fff;
+    position:relative;
+    left:-7px;
+    top:0px;
+    border:1px solid #ddd;
+    border-bottom:0px;
+}
+
+/* 网站导航里面的内容 与客服中心里面的内容*/
+.site:hover .left-nav .site-list dd p a:hover,.service .service-list a:hover{
+    color:#FF6600;
+}
+
+/* hover 网站导航  商家入驻 客户服务的 li 改变*/
+li.site:hover,li.merchant:hover,li.service:hover{
+    background:#fff;
+    border-bottom:0px;
+    line-height:35px;
+    padding:0 6px;
+    box-sizing:border-box;
+}
+/* hover网站导航  商家入驻  的 li 改变里面的内容*/
+.site:hover .left-nav,.merchant:hover .merchant-list{
+    // display: block;
+    position:absolute;
+    top:34px;
+    left:-1px;
+    border-bottom:0px;
+    z-index:2;
+}
+/* 这是给商家入驻 和 客户服务内容的高度*/
+.header-left ul .merchant:hover .merchant-list,.header-left ul .service:hover .service-list{
+    height:140px;
+}
+/* 网站导航的下拉菜单样式 */
+.header-left ul li .left-nav{
+    position:absolute;
+    top:35px;
+    left:0px;
+    width:990px;
+    height:0px;
+    background:#fff;
+    padding:20px 0;
+    box-sizing:border-box;
+    border:1px solid #ddd;
+    display: none;
+    z-index:2;
+    height:240px;/*网站导航的高度*/
+
+}
+
+.left-nav .site-list{
+    background: #fff;
+    line-height:20px;
+}
+.site-list dd p a{
+    position: relative;
+    display: inline-block;
+}
+.site-list dd p .hot{
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../images/npbg.png) no-repeat 0 -205px;
+    left: auto;
+    right: -18px;
+    top: 4px;
+}
+.left-nav dl{
+    width:195px;
+    border-right:1px solid #ddd;
+    float:left;
+}
+.left-nav dl:last-of-type{
+    border-right:0px;
+}
+.left-nav dl dt{
+    padding:0 20px;
+    float: left;
+    height:25px;
+}
+.left-nav dl dd{
+    width: 100%;
+    overflow: hidden;
+}
+.left-nav .site-list dd p{
+    float: left;
+    height: 25px;
+    width: 50px;
+    line-height: 25px;
+    padding:0 0 0 22px;
+}
+.left-nav dl dd a{
+    position: relative;
+    display: inline-block;
+}
+/* 网站导航的下拉菜单样式结束 */
+
+/* 商家入驻 内容样式 */
+.merchant .merchant-list{
+    position:absolute;
+    top:35px;
+    width:164px;
+    height:0px;
+    background:#fff;
+    padding:10px 0;
+    box-sizing:border-box;
+    border:1px solid #ddd;
+    display: none;
+}
+.merchant .merchant-list a,.service-list a{
+    width:71px;
+    height:28px;
+    line-height:28px;
+    padding-left:10px;
+    display: inline-block;
+    float:left;
+}
+/*  商家入驻内容样式 结束 */
+
+/* 客户服务样式 开始 */
+.header-left .service .service-list{
+    position:absolute;
+    top:34px;
+    right:-1px;
+    width:165px;
+    height:140px;
+    background:#fff;
+    border:1px solid #ddd;
+    padding:10px 0;
+    // display: block;
+    display: none;
+    box-sizing:border-box;
+}
+/* address地址*/
+li.address a i.wei{
+    width:16px;
+    height:16px;
+    font-size:16px;
+    display: inline-block;
+    background:url(../images/index.png)-386px -183px;
+    vertical-align: -1px;
+}
+li.address a i.jian:before{
+    font-size:12px;
+    color:#BBBBBB;
+}
+/* 右边开始 */
+.header-right{
+    float: right;
+    width:642px;
+    height:36px;
+    line-height:36px;
+
+}
+.header-right .xia:before{
+    vertical-align:-1px;
+    font-size:10px;
+    display: inline-block;
+    transition:0.3s;
+}
+.order:hover a .xia:before,.header-right .tesco:hover a .xia:before,.car:hover a .xia:before,.mobile:hover a .xia:before{
+    transform:rotate(-180deg);
+}
+.header-right a{color:#666666; display: inline-block;}
+.header-right a:hover{color:#FF6600;}
+.header-right ul li{
+    float: left;
+    width:75px;
+    text-align:center;
+    height:35px;
+}
+.header-right ul li.log{
+    width:108px;
+    padding-right:5px;
+
+}
+.header-right ul li.log a:last-of-type{
+    color:#FF6600;
+    margin-left:8px;
+}
+/* 我的订单 */
+.header-right ul li.order{
+    width:78px;
+    height:36px;
+    line-height:36px;
+    box-sizing:border-box;
+    position:relative;
+    top:0;
+}
+.header-right ul .order:hover a.order-a,.tesco:hover .tesco-a,.car:hover .car-a{
+    width:78px;
+    height:36px;
+    line-height:34px;
+    z-index:3;
+    background:#fff;
+    position:relative;
+    left:-1px;
+    top:0px;
+    border:1px solid #ddd;
+    border-bottom:0px;
+}
+.order .order-list,.tesco .tesco-list{
+    position:absolute;
+    top:34px;
+    left:-1px;
+    width:78px;
+    height:127px;
+    background:#fff;
+    border:1px solid #ddd;
+    display: none;
+    z-index: 2;
+}
+.order:hover .order-list,.tesco:hover .tesco-list,.header-right ul .mobile:hover .mobile-list{
+    // display: block;
+}
+.order .order-list a{
+    width:73px;
+    height:30px;
+    float: left;
+}
+.header-right .tesco{
+    width:78px;
+    height:36px;
+    line-height:36px;
+    box-sizing:border-box;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+/* 我的易购 内容*/
+.tesco .tesco-list{
+    width:164px;
+    height:173px;
+}
+.tesco-list .list1{
+    width:54px;
+    height:54px;
+    float:left;
+    margin:10px 10px 0 10px;
+}
+.tesco-list .list1 a img{
+    width:54px;
+    height:54px;
+}
+.tesco>.tesco-list>a{
+    width:60px;
+    height:30px;
+    display: inline-block;
+    float:left;
+    font-size:12px;
+    margin-left:10px;
+    word-break:normal;
+}
+.tesco>.tesco-list>a.a1{
+    margin-top:10px;
+    width:40px;
+}
+.tesco>.tesco-list>a.a2{
+    height: 22px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 22px;
+    background: #F60;
+    border-radius: 4px;
+}
+.tesco>.tesco-list>.list2{
+    width:164px;
+    height:100px;
+    float: left;
+}
+.tesco>.tesco-list>.list2>a{
+    width:74px;
+    height:30px;
+    display:inline-block;
+}
+.tesco:hover .tesco-list{
+    position: absolute;
+    top:34px;
+    left:-1px;
+}
+/* 我的易购内容结束 */
+
+/* 苏宁会员  易付宝 企业采购 */
+.header-right li.vip,.header-right li.pay,.header-right li.enter{
+    height:38px;
+    line-height:38px;
+}
+.header-right li.pay{
+    width:50px;
+}
+/* 购物车*/
+.header-right .car{
+    width:95px;
+    height:36px;
+    line-height:36px;
+    box-sizing:border-box;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.car:hover .car-a{
+    width:95px;
+}
+.car a{
+    color:#FF6600;
+}
+.car .car-list{
+    position:absolute;
+    top:34px;
+    left:0px;
+    display: none;
+    width:282px;
+    background:#fff;
+    border:1px solid #ddd;
+    z-index: 2;
+    // display: none;
+}
+.car .car-list .list1{
+    padding:100px;
+    box-sizing:border-box;
+}
+
+.car:hover .car-list{
+    position:absolute;
+    top:34px;
+    left:-1px;
+    height:402px;
+    // display: block;
+}
+.header-right .mobile{
+    width:78px;
+    height:36px;
+    line-height:36px;
+    box-sizing:border-box;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.header-right ul .mobile:hover a.mobile-a{
+    width:78px;
+    height:36px;
+    line-height:34px;
+    z-index:3;
+    background:#fff;
+    position:relative;
+    left:-1px;
+    top:0px;
+    border:1px solid #ddd;
+    border-bottom:0px;
+}
+.header-right ul .mobile .mobile-list{
+    position:absolute;
+    top:34px;
+    right:-1px;
+    width:540px;
+    height:230px;
+    background:#fff;
+    border:1px solid #ddd;
+    display: none;
+    z-index: 2;
+}
+.mobile-list ul{
+    width:540px;
+    height:230px;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.mobile-list ul li{
+    width:160px;
+    height:147px;
+    margin:17px 0 0;
+}
+.mobile-list ul li:nth-child(1),.mobile-list ul li:nth-child(2){
+    margin-right:10px;
+}
+.mobile-list ul li p{
+    width: 150px;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    text-align: center;
+    color: #666;
+}
+.mobile-list ul li img {
+    // display: block;
+    width:147px;
+    height:147px;
+    margin:0 auto 10px;
+}
+.mobile-list .line{
+    position: absolute;
+    top: 42px;
+    left: 185px;
+    width: 1px;
+    height: 97px;
+    background: #DEDEDE;
+}
+.mobile-list .lineTwo{
+    left: 355px;
+}
+/* 导航条样式结束*/

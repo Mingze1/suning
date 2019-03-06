@@ -1,0 +1,408 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+ul,ol,li{
+    list-style:none;
+}
+a{
+    font: 12px/1.5 "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+        color: #222;
+}
+body,html{
+    background:#f8f8f8;
+    color:#222;
+    height:100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+input[type="number"]{
+-moz-appearance: textfield;
+}
+.header{
+    width:980px;
+    height:88px;
+    margin:0 auto;
+    background:#f8f8f8;
+}
+.header .right{
+    float: right;
+    margin-top:63px;
+}
+.header .logo{
+    float: left;
+    width: 190px;
+    height: 100%;
+    margin-right: 24px;
+    background: url(../images/sprite1.png) no-repeat;
+}
+.header .logo-text{
+    float: left;
+    font-size: 18px;
+    color: #666;
+    line-height: 88px;
+}
+.main{
+    width: 990px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-top: 3px solid #f90;
+    background: #fff;
+    padding: 55px 0;
+    line-height: 1.5;
+}
+.main .form{
+    width:380px;
+    height:327px;
+    margin:0 auto;
+    font-size:12px;
+}
+.bag{
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 2px;
+    margin-bottom: 17px;
+}
+.bag i{
+    float: left;
+    width: 19px;
+    height: 17px;
+    margin-right: 6px;
+    background: url(../images/sprite1.png) -75px -93px no-repeat;
+}
+.bag em{
+    color:#f40;
+}
+.form .input-wrapper{
+    width: 378px;
+    height:38px;
+    position: relative;
+    float: left;
+    border:1px solid #ccc;
+    margin-bottom:28px;
+}
+.input-wrapper label.title{
+    float: left;
+    width:60px;
+    height:38px;
+    line-height:38px;
+    padding:0 13px;
+    position: relative;
+}
+.input-wrapper input{
+    line-height:38px;
+    border:0px;
+    width:130px;
+}
+.input-wrapper input.cell{
+    width:290px;
+}
+.input-wrapper input.pas{
+    width:290px;
+}
+.input-wrapper .send-msg{
+    width:150px;
+    height:38px;
+    text-align:center;
+    background:#F5F5F5;
+    display: inline-block;
+    float: right;
+    font:14px/38px 微软雅黑;
+    border-left:1px solid #BBBBBB;
+    cursor:pointer;
+}
+.input-wrapper a.send-msg:hover{
+    color:#f40;
+}
+.input-wrapper .ok{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    right: 12px;
+    background: url(../images/sprite1.png) -120px -93px no-repeat;
+    display: none;
+}
+.input-wrapper p.pd-ipone,.input-wrapper p.yzm,.input-wrapper .voice,.input-wrapper .voice span,.input-wrapper .voice a.ma,.input-wrapper p.pd-ipone0,.input-wrapper p.pd-ipone3,.input-wrapper p.pd-ipone1{
+    visibility:hidden;
+}
+.input-wrapper p.pd-ipone,.input-wrapper p.pd-ipone0,.input-wrapper p.pd-ipone3,.input-wrapper p.pd-ipone1{
+    height: 25px;
+    line-height: 25px;
+    color: red;
+    position:absolute;
+    top:50;
+}
+.input-wrapper p.yzm{
+    height: 29px;
+    line-height: 29px;
+    color:#999999;
+    float: left;
+}
+.input-wrapper .voice{
+     height: 25px;
+    line-height: 25px;
+    float: right;
+}
+.input-wrapper .voice span{
+    color: #2272c8;
+    padding-right: 3px;
+    vertical-align: -3px;
+}
+.input-wrapper .voice a.ma{
+    float: right;
+    width: 110px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+.input-wrapper p.pd-pas,.input-wrapper p.pd-pas0{
+    height: 25px;
+    line-height: 25px;
+    color:#999999;
+    display: none;
+}
+
+.input-wrapper .true{
+    position
+}
+.input-wrapper .level{
+    width:300px;
+    height:16px;
+    line-height:16px;
+    margin-top:5px;
+    display: none;
+}
+.level span.on{
+    width:50px;
+    height:16px;
+    text-align:center;
+    display: inline-block;
+    margin-right:2px;
+    color:#fff;
+    background:#FFAA00;
+}
+.level i{
+     font-style:normal;
+}
+.level span.s1,.level span.s2,.level span.s3{
+    width:50px;
+    height:16px;
+    background: #CACACA;
+    text-align:center;
+    display: inline-block;
+    margin-right:2px;
+    color:#fff;
+}
+::-webkit-input-placeholder{
+        color: #D9CECD;
+        font-size: 12px;
+        line-height: 20px;
+        }
+.input-wrapper .eay{
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    background: url(../images/sprite1.png) -50px -93px no-repeat;
+}
+.input-wrapper .eay1{
+    width: 20px;
+    height: 20px;
+    top: 9px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    background: url(../images/sprite1.png) -25px -93px no-repeat;
+}
+.form .hint{
+    height:35px;
+    width:380px;
+    visibility: hidden;
+}
+.submit{
+    width: 380px;
+    line-height: 40px;
+    background: #f60;
+    font-size: 20px;
+    color: #fff;
+    margin: 24px 0 5px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+.submit:hover{
+    background:#FF5500;
+}
+.form .pany{
+    color: #f60;
+    font-size: 14px;
+    float: left;
+    height: 21px;
+}
+.form .pany i{
+    float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../images/sprite1.png) -141px -93px no-repeat;
+    margin: 3px 5px 0 0;
+}
+// .mak{
+//     width: 641px;
+//     height: 430px;
+//     background: #000;
+//     opacity: .1;
+//     position:relative;
+// }
+
+.wrap{
+    position:fixed;
+    width: 586px;
+    height: 420px;
+    top: 50%;
+    left:50%;
+    margin-top:-210px;
+    margin-left:-293px;
+    background: #eee;
+    padding: 6px 6px;
+    // display: none;
+    z-index:999;
+    background:rgba(224,224,224,0.7);
+    font: 12px/1.5 "微软雅黑";
+}
+.wrap .content{
+    width: 586px;
+    height: 420px;
+    background: #fff;
+    padding:0 16px;
+    box-sizing:border-box;
+}
+.content .head{
+    height:40px;
+    line-height:40px;
+    box-shadow: inset 0 -1px 0 0 #ddd;
+}
+.head span{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    font-weight:bold;
+}
+.head a{
+    float: right;
+    width: 14px;
+    height: 12px;
+    margin-top: 14px;
+    background: url(../images/sprite1.png) -163px -93px no-repeat;
+    cursor: pointer;
+}
+.content .body{
+    padding-top:20px;
+    box-sizing:border-box;
+}
+.body p{
+    color: #333;
+    line-height: 20px;
+}
+.body p a{
+    color: #f60;
+    font-weight: 700;
+}
+.body .btn{
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    background: #f60;
+    font-size: 14px;
+    color: #fff;
+    margin: 6px auto 0;
+    display: block;
+}
+
+
+
+.footer{
+    height: 180px;
+    text-align: center;
+    margin-top:18px;
+}
+.footer .footer_con{
+    width:970px;
+    height:130px;
+    margin:0 auto;
+
+}
+.footer_con p{
+    height: 25px;
+    line-height: 25px;
+    float: none;
+    width: 100%;
+}
+.footer_con p.p1 a{
+    line-height: 16px;
+    display: inline-block;
+    color:#666;
+    font-family: "Microsoft Yahei";
+}
+.footer_con p span{
+    color: #888;
+    padding: 0 5px;
+}
+.footer_con p a:hover{
+    color:#f60;
+    text-decoration:underline;
+}
+.footer p.copy{
+    width:980px;
+    line-height: 25px;
+    color: #999;
+    margin-top: 5px;
+    font:12px/25px "Microsoft Yahei";
+
+    margin:0 auto;
+}
+.gwab{
+position:relative;
+z-index:0;
+width:178px;
+height:16px;
+padding-left:25px;
+}
+.gwab i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/gwab-icon.png) no-repeat;
+}
+.footer p.copy a{
+    color:#999;
+    font-size:12px;
+}
+.footer p.copy a:hover{
+    text-decoration:underline;
+}
+.footer .coop{
+    margin: 5px auto;
+    height: 25px;
+    width: 990px;
+}
+.coop a{
+    margin-right:8px;
+}
